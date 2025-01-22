@@ -1,0 +1,165 @@
+.loginbs {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+
+  .dashboardbs {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+  .side-menu {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+  }
+
+  .side-menu.collapsed {
+    width: 60px;
+  }
+
+  .menu-header {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #34495e;
+  }
+
+  .menu-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-options li {
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+
+  .menu-options li:hover {
+    background-color: #1abc9c;
+  }
+
+  .menu-options li i {
+    margin-right: 10px;
+  }
+
+  .menu-options.collapsed li span {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    transition: margin-left 0.3s;
+  }
+
+  .main-content.collapsed {
+    margin-left: 60px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-item {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .menuIcon{
+    height: 20px;
+    width: 20px;
+
+  }

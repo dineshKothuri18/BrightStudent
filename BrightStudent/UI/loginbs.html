@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Student</title>  
+  <link rel="stylesheet" href="./bs.css">
+</head>
+<body>
+    <div class="loginbs">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <div class="error-message" id="passwordError">Password cannot be empty.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-secondary" id="forgotPassword">Forgot Password</button>
+                <button type="button" class="btn btn-secondary" id="signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+  <script src="./loginbs.js">
+   
+  </script>
+</body>
+</html>
