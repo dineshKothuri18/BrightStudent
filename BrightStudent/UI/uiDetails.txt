@@ -1,0 +1,17 @@
+Login Screen
+        Able to Login using email/phone 
+        Reset Password
+        SignUp Option
+    SignUp Screen
+    Reset Password
+    Dashboard Screen
+        Show List of Students        
+        Show List of Courses
+        Show List of Faculty
+        Add A New Student
+        Add A New Course
+        Add A New Employee
+        Logout
+    Student Info Screen
+    Employee Info Screen
+    Course Info Screen
