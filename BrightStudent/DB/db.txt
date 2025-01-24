@@ -2,3 +2,82 @@ Student Table
 Employee Table
 Course Table
 SignUp Table
+
+
+CREATE TABLE Course (
+    CourseID VARCHAR(10) PRIMARY KEY,
+    CourseName VARCHAR(100) NOT NULL,
+    Duration VARCHAR(20) NOT NULL,
+    Fees INT NOT NULL
+);
+
+INSERT INTO Course (CourseID, CourseName, Duration, Fees) VALUES
+('J1', 'Java Full Stack', '6 months', 40000),
+('P1', 'Python Full Stack', '5 months', 35000),
+('F1', 'Frontend development', '3 months', 20000),
+('DS1', 'Data Science', '10 months', 50000),
+('B1', 'Backend development', '3 months', 35000),
+('D1', 'DevOps', '2 months', 20000),
+('C1', 'C ++', '5 months', 15000);
+
+
+
+CREATE TABLE Student (
+    StuID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Age INT NOT NULL,
+    Gender CHAR(1) NOT NULL,
+    CourseID VARCHAR(10) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    PhNo VARCHAR(12) NOT NULL,
+    Address VARCHAR(100) NOT NULL,
+        FOREIGN KEY (CourseID) REFERENCES Course(CourseID) ON DELETE CASCADE
+);
+
+
+INSERT INTO Student (StuID, Name, Age, Gender, CourseID, Email, PhNo, Address) VALUES
+(1, 'Akhila', 21, 'F', 'J1', 'akhiladasireddy1434@gmail.com', 8074843545, 'Hyd'),
+(2, 'Vamshi', 22, 'M', 'P1', 'vamshi25@gmail.com', 7893554827, 'Ongole'),
+(3, 'Sai Charan', 22, 'M', 'F1', 'charan42@gmail.com', 9573098959, 'Karimnagar'),
+(4, 'Chaitanya', 20, 'M', 'DS1', 'chethan9@gmail.com', 9059847134, 'Kadapa'),
+(5, 'Satwika', 21, 'F', 'B1', 'sathvika01@gmail.com', 9014071767, 'Vijayawada'),
+(6, 'Rahul', 22, 'M', 'D1', 'rahul52@gmail.com', 9000499878, 'Khammam'),
+(7, 'Vijaya', 21, 'F', 'C1', 'vijaya87@gmail.com', 8074514651, 'Guntur');
+
+SELECT * FROM course;
+
+SELECT * FROM student;
+
+CREATE TABLE Employee (
+    EmpID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Gender CHAR(1) NOT NULL,
+    CourseID VARCHAR(10) NOT NULL,
+    PhNo VARCHAR(12) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID) ON DELETE CASCADE
+);
+
+INSERT INTO Employee (EmpID, Name, Gender, CourseID, PhNo, Email) VALUES
+(101, 'Dinesh', 'M', 'J1', 9989780267, 'dinesh@gmail.com'),
+(102, 'Srinivas', 'M', 'P1', 7418529630, 'sinivas@gmail.com'),
+(103, 'Anil', 'M', 'F1', 8529637410, 'anil@gmail.com'),
+(104, 'Viswanath', 'M', 'DS1', 7894561230, 'viswa25@gmail.com'),
+(105, 'Sivanath', 'M', 'B1', 9876543210, 'siva02@gmail.com'),
+(106, 'Babu', 'M', 'D1', 8963257410, 'babureddy76@gmail.com');
+
+
+SELECT * FROM Employee;
+
+CREATE TABLE User (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(50) NOT NULL,
+    Gender CHAR(1) NOT NULL,
+    PhNo VARCHAR(12) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Password VARCHAR(100) NOT NULL
+);
+
+INSERT INTO User()
+	VALUES(123,"Admin","F","9876543210","admin@gmail.com","Admin@123");
+    
