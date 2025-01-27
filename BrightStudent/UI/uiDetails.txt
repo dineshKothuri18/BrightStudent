@@ -15,3 +15,11 @@ Login Screen
     Student Info Screen
     Employee Info Screen
     Course Info Screen
+
+
+    Task:
+    Jan 27 2025
+    Update sideMenu Items to Students,Faculty,Courses
+    Create a Student Grid
+    Create a Faculty Grid
+    Create a Courses Grid
